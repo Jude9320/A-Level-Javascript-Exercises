@@ -7,3 +7,7 @@ function calculatePercentage() {
     // 2. Calculate the percentage using the formula: (student's mark ÷ maximum mark) × 100
     // 3. Display the result in the percentage span element
 }
+
+
+
+

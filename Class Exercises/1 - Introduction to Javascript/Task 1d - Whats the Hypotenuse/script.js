@@ -8,3 +8,9 @@ function calculateHypotenuse() {
     // 3. Display the result in the hypotenuse span element
     // Note: Use Math.sqrt() for square root
 }
+let sideA = parseFloat(prompt(console.log("Enter the length of side A")))
+let sideB = parseFloat(prompt(console.log("Enter the length of side B")))
+
+let hyp = Math.sqrt((sideA ** 2) + (sideB ** 2))
+
+console.log("The length of the hypotenuse is " + hyp);
