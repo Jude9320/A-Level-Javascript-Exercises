@@ -11,7 +11,7 @@ function convertToCentimeters() {
     //    - First convert feet to inches (1 foot = 12 inches)
     newInches = feet * 12
     //    - Then convert total inches to centimeters (1 inch = 2.54 cm)
-    cent = newInches * 2.54
+    cent = inches * 2.54
     // 3. Display the result in the centimeters span element
     document.getElementById("centimeters").textContent = +cent
 }
