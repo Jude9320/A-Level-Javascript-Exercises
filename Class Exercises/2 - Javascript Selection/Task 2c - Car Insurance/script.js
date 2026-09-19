@@ -6,21 +6,34 @@ document.addEventListener('DOMContentLoaded', function() {
     // Add click event listener to the button
     calculateButton.addEventListener('click', calculatePremium);
 });
-
+const basePremium = 500
+let discount = 0
 // Function to calculate the insurance premium
 function calculatePremium() {
     // TODO: Get values from input fields
-    
+    let age = parseInt(document.getElementById("age").value)
+    let claims = parseInt(document.getElementById("noClaims").value)
+    let previousClaims = parseInt(document.getElementById("previousClaims").value)
     // TODO: Calculate base premium (£500)
-    
     // TODO: Apply age adjustment
+    if age < 25 {
+        discount = (basePremium * 0.5) + basePremium
+    }else if age > 40 {
+        discount = basepremium * 0.85
+    } else {
+        discount = basePremium
+    }
     // Under 25: +50%
     // 25-40: No change
     // Over 40: -15%
     
+    
     // TODO: Apply no claims bonus
     // 0 years: No discount
+    if claims == 0 {
+        newDiscount = discount + 0
     // 1-2 years: 10% discount
+    } else if claims > 
     // 3-5 years: 25% discount
     // Over 5 years: 35% discount
     

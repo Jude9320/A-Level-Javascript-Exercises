@@ -40,5 +40,5 @@ function calculateGrade() {
     }
     // TODO: Display the percentage and grade
     document.getElementById("result").textContent = "Grade: " + grade
-    document.getElementById("percentage").textContent = "Grade: " + percent
+    document.getElementById("percentage").textContent = "percentage: " + percent
 }
