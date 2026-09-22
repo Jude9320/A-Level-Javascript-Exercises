@@ -16,9 +16,9 @@ function calculatePremium() {
     let previousClaims = parseInt(document.getElementById("previousClaims").value)
     // TODO: Calculate base premium (£500)
     // TODO: Apply age adjustment
-    if age < 25 {
+    if (age < 25) {
         discount = (basePremium * 0.5) + basePremium
-    }else if age > 40 {
+    }else if (age > 40) {
         discount = basepremium * 0.85
     } else {
         discount = basePremium
@@ -30,15 +30,10 @@ function calculatePremium() {
     
     // TODO: Apply no claims bonus
     // 0 years: No discount
-    if claims == 0 {
-        newDiscount = discount + 0
     // 1-2 years: 10% discount
-    } else if claims > 
     // 3-5 years: 25% discount
-    // Over 5 years: 35% discount
-    
+    // Over 5 years: 35% discount  
     // TODO: Add previous claims adjustment
-    // Each claim adds 20%
-    
+    // Each claim adds 20%  
     // TODO: Display the final premium and the breakdown of calculations
 }
